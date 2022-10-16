@@ -59,18 +59,16 @@ public class Main {
             }
         }
 
-        int friday = 0;
-        i = 0;
-        while (i < 31) {
-            i = i + 1;
-            if (i % 7 == 0) {
-                System.out.println("Сегодня пятница " + (i + friday) + " число. Необходимо подготовить отчет");
-            }
+        int fridaysDate = 7;
+        while (fridaysDate < 31) {
+            System.out.println("Сегодня пятница " + fridaysDate + " число. Необходимо подготовить отчет");
+            fridaysDate = fridaysDate + 7;
         }
+
         int year = 0;
-        i = 79;
+        int rotationPeriod = 79;
         while (year < 2022 + 100) {
-            year = year + i;
+            year = year + rotationPeriod;
             if (year >= 2022-200 && year <= 2022+100) {
                 System.out.println(year);
             }
