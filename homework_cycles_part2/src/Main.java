@@ -6,7 +6,7 @@ public class Main {
         while (total < 2459000) {
             total = total + total / 100;
             total = total + savings;
-            i = i + 1;
+            i++;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
 
@@ -27,7 +27,7 @@ public class Main {
         System.out.println();
         while (years < 10) {
             population = (population + birthRate * (population/1000) - mortalityRate * (population/1000));
-            years = years + 1;
+            years++;
             System.out.println("Год " + years + " численность населения составляяет " + population);
         }
 
@@ -35,7 +35,7 @@ public class Main {
         i = 0;
         while (savings < 12_000_000) {
             savings = savings + (savings / 100) * 7;
-            i = i + 1;
+            i++;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + savings + " рублей");
         }
 
@@ -43,7 +43,7 @@ public class Main {
         i = 0;
         while (savings < 12_000_000) {
             savings = savings + (savings / 100) * 7;
-            i = i + 1;
+            i++;
             if (i % 6 == 0) {
                 System.out.println("Месяц " + i + ", сумма накоплений равна " + savings + " рублей");
             }
@@ -53,7 +53,7 @@ public class Main {
         i = 0;
         while (i < 12 * 9) {
             savings = savings + (savings / 100) * 7;
-            i = i + 1;
+            i++;
             if (i % 6 == 0) {
                 System.out.println("Месяц " + i + ", сумма накоплений равна " + savings + " рублей");
             }
@@ -62,14 +62,14 @@ public class Main {
         int fridaysDate = 7;
         while (fridaysDate < 31) {
             System.out.println("Сегодня пятница " + fridaysDate + " число. Необходимо подготовить отчет");
-            fridaysDate = fridaysDate + 7;
+            fridaysDate+=7;
         }
 
         int year = 0;
         int rotationPeriod = 79;
         while (year < 2022 + 100) {
             year = year + rotationPeriod;
-            if (year >= 2022-200 && year <= 2022+100) {
+            if (year >= 2022-200) {
                 System.out.println(year);
             }
         }
